@@ -1,20 +1,37 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face{
-    font-family: Fuente;
-    src: url('../fonts/glyphicons-halflings-regular.woff');
+    font-family: latothin;
+    src: url('../fonts/Lato-Thin.ttf');
+}
+@font-face{
+    font-family: latolight;
+    src: url('../fonts/Lato-Hairline.ttf');
+}
+@font-face{
+        font-family: latobold;
+    src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face{
+        font-family: lato;
+    src: url('../fonts/Lato-Medium.ttf');
+}
+@font-face{
+    font-family: josefin;
+    src: url('../fonts/JosefinSlab-Regular.ttf');
 }
 body{
     padding-top: 80px;
-    background-image: url(../pictures/satinweave.png);
+    background: #fff;
 }
 
 
 .nav a {
   color: #5a5a5a;
-  font-size: 12px;
+  font-size: 16px;
   padding: 14px 10px;
   text-transform: uppercase;
+  font-family: latothin;
 }
 
 .nav li {
@@ -22,12 +39,12 @@ body{
 }
 
 .navbar-fixed-top {
-    background-color: #424242;
+    background-color: #00467b;
     border-bottom: #5a5a5a;
 }
 
 .jumbotron {
-  background-image:url('http://goo.gl/dNqcfU');
+  background-image:url('../pictures/main.jpg');
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,27 +59,40 @@ body{
   color: #fff;
   opacity:0.90;
   font-weight: bold;
-  font-size: 50px;  
+  font-size: 80px;  
+  font-family: latolight;
 }
 
 .jumbotron p {
   font-size: 24px;
   opacity:0.75;
   color: #fff;
+  font-family: josefin;
+  font-size: 30px;
 }
-
+.jumbotron a{
+    font-family: latobold;
+    font-size: 20px;
+}
 .learn-more {
-  background-color: #EDEDED;
+  background-color: #514A4A;
 }
 
 .learn-more h3 {
-  font-family: 'Segoe UI';
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  font-family: latothin;
 }
 
 .learn-more a {
-  color: #00b0ff;
+  color: #0079a1;
+  font-family: latobold;
+  font-size: 16px;
+}
+.learn-more p{
+  color: #DBD2D2;
+  font-family: lato;
+  font-size: 16px;
 }
 
 .perfil{
