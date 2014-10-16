@@ -23,7 +23,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html">Home</a>
-                    
+
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,22 +50,32 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-
         <div class="consultas">
+            
             <div class="container">
-                <div class="col-lg-3">
-                    <div class="list-group">
-                        <center><h3>Area de las ciencias</h3></center>
-                        <a href="#" class="list-group-item">Humanidades y Ciencias Sociales</a>
-                        <a href="#" class="list-group-item">Biología y Biomedicina</a>
-                        <a href="#" class="list-group-item">Ciencias Agrarias</a>
-                        <a href="#" class="list-group-item">Ciencia y Tecnologías Físicas</a>
-                        <a href="#" class="list-group-item">Ciencia y Tecnologías Químicas</a>
+                <br><br>
+                <center>
+                <div class="busqueda input-group col-lg-8">
+                    <input type="text" class="form-control" placeholder="Busqueda..." id="query" name="query" value="">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-success"><img src="pictures/search.png" alt="" width="20"/></button>
+                        
                     </div>
-
                 </div>
-                <div class="col-lg-9">
-                    <center>
+            <br><br>
+            <div class="col-lg-3">
+                <div class="list-group">
+                    <center><h3>Area de las ciencias</h3></center>
+                    <a href="#" class="area list-group-item">Humanidades y Ciencias Sociales</a>
+                    <a href="#" class="area list-group-item">Biología y Biomedicina</a>
+                    <a href="#" class="area list-group-item">Ciencias Agrarias</a>
+                    <a href="#" class="area list-group-item">Ciencia y Tecnologías Físicas</a>
+                    <a href="#" class="area list-group-item">Ciencia y Tecnologías Químicas</a>
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+                <center>
                     <div class="panel panel-default">
                         <!-- Default panel contents -->
                         <div class="panel-heading">Subido recientemente</div>
@@ -81,33 +91,42 @@
                             <li class="list-group-item">Vestibulum at eros</li>
                         </ul>
                     </div>
-                    </center>
-                </div>
+                    <ul class="pagination">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </center>
             </div>
         </div>
+    </div>
 
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l;
-                b[l] || (b[l] =
-                        function() {
-                            (b[l].q = b[l].q || []).push(arguments)
-                        });
-                b[l].l = +new Date;
-                e = o.createElement(i);
-                r = o.getElementsByTagName(i)[0];
-                e.src = '//www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }(window, document, 'script', 'ga'));
-            ga('create', 'UA-XXXXX-X');
-            ga('send', 'pageview');
-        </script>  
-    </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                    function () {
+                        (b[l].q = b[l].q || []).push(arguments)
+                    });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>  
+</body>
 </html>

@@ -1,13 +1,10 @@
 var main = function() {
-    $('.list-group-item').click(function() {
+    $('.area').click(function() {
         $(this).toggleClass("active");
-        var parrafo = document.createElement('li');
-        // Crear nodo de tipo Text
-        var contenido = document.createTextNode("Hola Mundo!");
-        // Añadir el nodo Text como hijo del nodo Element
-        parrafo.appendChild(contenido);
-        // Añadir el nodo Element como hijo de la pagina
-        $('.reciente').append(parrafo);
+        
+    });
+    $('.pagination').click(function() {
+        $(this).toggleClass("active");
     });
 };
 $(document).ready(main);
