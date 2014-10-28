@@ -28,7 +28,7 @@ body{
 
 .nav a {
   color: #5a5a5a;
-  font-size: 16px;
+  font-size: 12px;
   padding: 14px 10px;
   text-transform: uppercase;
   font-family: latothin;
@@ -97,17 +97,42 @@ body{
 }
 
 .perfil{
-    padding: 15px;
-    background-image:url(../pictures/congruent_outline.png);
+    padding-top: 15px; 
+    background-image:url(../pictures/diagmonds.png);
+    
 }
 .perfil h1{
     color: #008cba;
     font-weight: bold;
+    font-family: latolight;
+    text-align: center;
 }
 .perfil p{
-    color:#ffffff;
+    margin-top: 20px;
+    color:#DBD2D2;
+    font-family: latothin;
+    font-size: 18px;
+    text-align: left;
 }
 
-.busqueda{
-    alignment-adjust: central;
+.centradoV{
+    display: table-cell;
+    vertical-align: middle
+}
+.centrado{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnImagen{
+    background: #fff;
+    border-color: #fff;
+}
+.pantalla{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.menu{
+    margin: 20px;
 }
