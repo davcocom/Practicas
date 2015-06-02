@@ -5,72 +5,57 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
+<head>
+    <title>Subir archivo</title>
+    <link rel="stylesheet" href="css/bootstrapYeti.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/navbar.js"></script>
+</head>
+<body>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+    <nav id="navbar" class="navbar-default navbar-fixed-top" role="navigation"></nav>
 
-        <nav class="navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Home</a>
-
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Buscar</button>
-                    </form>
-                    <ul class="nav navbar-nav">
-                        <li><a class="bg-primary" href="consultas.html">Consulta</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right"> 
-                        <li><a href="registro.html">Registrate</a></li>
-                        <li>
-                            <a href="perfil.html">Iniciar sesión</a>
-                        </li>
-                        <li><a href="#">Ayuda</a></li>
-                    </ul>
-
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-
-        <div id='content'>  
-    <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
-    <p>Vestibulum consectetur ipsum sit amet urna euismod imperdiet aliquam urna laoreet.</p>  
-    <p>Curabitur a ipsum ut elit porttitor egestas non vitae libero.</p>  
-    <p>Pellentesque ac sem ac sem tincidunt euismod.</p>  
-    <p>2Duis hendrerit purus vitae nibh tincidunt bibendum.</p>  
-    <p>Nullam in nisi sit amet velit placerat laoreet.</p>  
-    <p>Nulla sed purus et tellus convallis scelerisque.</p>  
-    <p>Nam at justo ut ante consectetur faucibus.</p>  
-    <p>Proin dapibus nisi a quam interdum lobortis.</p>  
-    <p>Nunc ornare nisi sed mi vehicula eu luctus mauris interdum.</p>  
-    <p>Mauris auctor suscipit tellus, at sodales nisi blandit sed.</p>  
-</div>  
-  <script src="http://c.fzilla.com/1286136086-jquery.js"></script>  
-<script src="http://c.fzilla.com/1291523190-jpaginate.js"></script>  
-<script>  
-$(document).ready(function(){  
-    $("#content").jPaginate();                         
-});  
-</script> 
-    </body>
+    <div class="container" >  
+        <div id="paginacion">
+            <div id="pagina-1">
+                <form action="fileConfiguration.php" method="post" enctype="multipart/form-data">
+                <br>
+                <label class="control-label">Archivo...</label>
+                <input type="file" value="Examinar" id="archivo" name="archivoCVS">
+                <br>
+                <br>
+                <label class="col-lg-2 control-label">Nombre</label> 
+                <input class="form-control" id="inputName" placeholder="Nombre" type="text" name="nombre">
+                <br>
+                <label class="col-lg-2 control-label">Descripcion</label> 
+                <textarea class="form-control" rows="3" id="textArea" name="descripcion"></textarea>
+                <br>
+                <label class="col-lg-2 control-label">Área de estudio</label> 
+                <select class="form-control" id="selectArea" name="area">
+                    <option>Humanidades y Ciencias Sociales</option>
+                    <option>Biología y Biomedicina</option>
+                    <option>Ciencias Agrarias</option>
+                    <option>Ciencia y Tecnologías Físicas</option>
+                    <option>Ciencia y Tecnologías Químicas</option>
+                </select>
+                <ul class='pager'>
+                    <li id='li-anterior' class="previous disabled"><a href='#'>Anterior</a></li>
+                    <li id='li-siguiente'><a href='#'><input type="submit" Value="Siguiente"></a></li>
+                </ul>
+                </form>
+            </div>
+        </div>
+    </div>  
+    <br>
+    <div class="container">
+        <button class="btn btn-danger" onclick="btnCancelar()">Cancelar</button>
+    </div>
+    <script src="http://c.fzilla.com/1286136086-jquery.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
